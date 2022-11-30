@@ -1,0 +1,292 @@
+<menu>
+	<menuitem label='Cadastros'>
+        <icon>fa:plus-square</icon><!--fa:retweet ** fa:file-signature-->
+        <menu>
+				<menuitem label='Empréstimos'>
+					<menu>
+					    
+						<menuitem label='Categorias de Risco'>
+							<icon></icon>
+							<action>Cat_RiscoListe</action> <!--addCatRisco-->
+						</menuitem>
+						
+					</menu>
+                </menuitem><!--empréstimos -->
+				
+				<menuitem label='Previdência'>
+					<menu>
+					    
+						<menuitem label='Processo SUSEP previdência'>
+							<icon></icon>
+							<action>Planos_SusepListe#method=onParamPec</action>
+						</menuitem>
+						
+						<menuitem label='Regimes Financeiros'>
+							<icon></icon>
+							<action>Reg_FinListe</action>
+						</menuitem>
+
+						<menuitem label='Vencimentos Assistência Financeira'>
+							<icon></icon>
+							<action>Cat_Risco_TriListe</action>
+						</menuitem> 
+						
+					</menu>
+                </menuitem><!--Previdêmcia -->
+				
+				<menuitem label='Seguradora'>
+					<menu>
+					    
+						<menuitem label='Grupos e Ramos'>
+							<icon></icon>
+							<action>RamosGruposListe#onReload</action>
+						</menuitem>
+						
+						<menuitem label='Estipulante'>
+							<icon></icon>
+							<action>EntidadesListe</action>
+						</menuitem>
+						
+						<menuitem label='Processo SUSEP seguradora'>
+							<icon></icon>
+							<action>Planos_SusepListe#method=onParamSeg</action>
+						</menuitem>
+						
+						<menuitem label='Sacursais'>
+							<icon></icon>
+							<action>Seg_SacursalListe</action>
+						</menuitem>
+						
+					</menu>
+                </menuitem><!--Seguradora -->
+				
+				<menuitem label='Gerais'>
+				<!--<icon>fa: fa-briefcase </icon>-->
+					<menu>
+						<menuitem label='Assossiados'>
+							<icon></icon>
+							<action>ClienteListe</action>
+						</menuitem>
+				
+						<menuitem label='Agentes'>
+							<icon></icon>
+							<action>FornecedoresListe</action><!--#method=onClear-->
+						</menuitem>
+				
+						<menuitem label='Bancos'>
+							<icon></icon>
+							<action>BancosListe</action>
+						</menuitem>
+				
+						<menuitem label='Coberturas'>
+							<icon></icon>
+							<action>CoberturasListe#method=onClear</action>
+						</menuitem>
+						
+						<menuitem label='Código de retorno dos bancos'>
+							<icon></icon>
+							<action>CodRetBancoListe</action>
+						</menuitem>
+						
+						<menuitem label='Entidades coletivas / consignatárias'>
+							<icon></icon>
+							<action>EntidadesConsigListe</action><!--#method=onClearFilter -->
+						</menuitem>
+						
+						<menuitem label='Entidades Garantidoras'>
+							<icon></icon>
+							<action>Ent_GarListe</action><!--#method=onClearFilter -->
+						</menuitem>
+						
+						<menuitem label='Formas de Pagamento'>
+							<icon></icon>
+							<action>FormasPagListe</action><!--#method=onClearFilter -->
+						</menuitem>
+						
+						<menuitem label='Motivos Cancelamento'>
+							<icon></icon><!--fa: fa-user-minus-->
+							<action>Motivos_CancelamentoListe</action>
+						</menuitem>
+						
+						<menuitem label='Planos'>
+							<icon></icon>
+							<action>PlanosListe</action>
+						</menuitem>
+						
+						<menuitem label='Situação dos Associados'>
+							<icon></icon>
+							<action>Clientes_StatusListe</action>
+						</menuitem>
+						
+						<menuitem label='Tipos de contratos'>
+							<icon></icon>
+							<action>Tipo_CtoListe</action>
+						</menuitem>
+						
+						<!--<menuitem label='Teste'>
+					    <menu>
+							<menuitem label='Categorias de Risco'>
+								<icon>fa:user-minus fa-fw</icon>
+								<action>Cat_RiscoListe</action>
+							</menuitem>
+					    </menu>
+                        </menuitem>teste -->
+						
+						
+						
+					</menu>
+                </menuitem><!--Gerais -->
+				
+        </menu>
+    </menuitem><!--Cadastros -->
+	
+	<menuitem label='Movimento'>
+        <icon>fa:cog</icon><!-- fa-briefcase  -->
+        <menu>
+			<menuitem label='Incluir Contrato'>
+				<icon>fa: fa-plus</icon>
+				<action>pesquisaAssociado</action><!--#method=onClear-->
+			</menuitem>
+		
+			<menuitem label='Consultar Contrato'>
+				<icon>fa: fa-plus</icon>
+				<action>consultarContrato</action><!--#method=onClear-->
+			</menuitem>
+		</menu>
+	</menuitem><!--Movimento-->
+	
+	<menuitem label='Relatórios'>
+        <icon>fas: fa-chart-bar</icon>
+        <menu>
+				<menuitem label='Contrato'>
+					<action>RelContrato</action>
+                </menuitem>
+        </menu>
+    </menuitem><!--Relatórios-->
+	
+	
+
+    <menuitem label='_t{Administration}'>
+        <icon>fas:home fa-fw</icon>
+        <menu>
+              <menuitem label='Dashboard'>
+                  <icon>fas:tachometer-alt fa-fw</icon>
+                  <action>SystemAdministrationDashboard</action>
+              </menuitem>
+              <menuitem label='_t{Programs}'>
+                  <icon>far:file-code fa-fw</icon>
+                  <action>SystemProgramList</action>
+              </menuitem>
+              <menuitem label='_t{Groups}'>
+                  <icon>fas:users fa-fw</icon>
+                  <action>SystemGroupList</action>
+              </menuitem>
+              <menuitem label='_t{Units}'>
+                  <icon>fas:university fa-fw</icon>
+                  <action>SystemUnitList</action>
+              </menuitem>
+              <menuitem label='_t{Users}'>
+                  <icon>fas:user fa-fw</icon>
+                  <action>SystemUserList</action>
+              </menuitem>
+              <menuitem label='_t{Database explorer}'>
+                  <icon>fas:database fa-fw</icon>
+                  <action>SystemDatabaseExplorer</action>
+              </menuitem>
+              <menuitem label='_t{SQL Panel}'>
+                  <icon>fas:table fa-fw</icon>
+                  <action>SystemSQLPanel</action>
+              </menuitem>
+              <menuitem label='_t{Menu editor}'>
+                  <icon>far:edit fa-fw</icon>
+                  <action>SystemMenuEditor</action>
+              </menuitem>
+              <menuitem label='PHP Info'>
+                  <icon>fas:info-circle fa-fw</icon>
+                  <action>SystemPHPInfoView</action>
+              </menuitem>
+              <menuitem label='_t{Preferences}'>
+                  <icon>fas:cog fa-fw</icon>
+                  <action>SystemPreferenceForm#method=onEdit</action>
+              </menuitem>
+        </menu>
+    </menuitem>
+    
+    <menuitem label='_t{Documents}'>
+        <icon>far:file-alt fa-fw</icon>
+        <menu>
+              <menuitem label='_t{Send document}'>
+                  <icon>fas:cloud-upload-alt fa-fw</icon>
+                  <action>SystemDocumentUploadForm</action>
+              </menuitem>
+              <menuitem label='_t{My documents}'>
+                  <icon>fas:archive fa-fw</icon>
+                  <action>SystemDocumentList</action>
+              </menuitem>
+              <menuitem label='_t{Shared with me}'>
+                  <icon>fas:share-alt fa-fw</icon>
+                  <action>SystemSharedDocumentList</action>
+              </menuitem>
+              <menuitem label='_t{Categories}'>
+                  <icon>fas:th fa-fw</icon>
+                  <action>SystemDocumentCategoryFormList</action>
+              </menuitem>
+        </menu>
+    </menuitem>
+    
+    <menuitem label='Logs'>
+        <icon>fas:desktop fa-fw</icon>
+        <menu>
+              <menuitem label='Dashboard'>
+                  <icon>fas:tachometer-alt fa-fw</icon>
+                  <action>SystemLogDashboard</action>
+              </menuitem>
+              <menuitem label='_t{Access Log}'>
+                  <icon>fas:key fa-fw</icon>
+                  <action>SystemAccessLogList</action>
+              </menuitem>
+              <menuitem label='_t{Change Log}'>
+                  <icon>fas:film fa-fw</icon>
+                  <action>SystemChangeLogView</action>
+              </menuitem>
+              <menuitem label='_t{SQL Log}'>
+                  <icon>fas:database fa-fw</icon>
+                  <action>SystemSqlLogList</action>
+              </menuitem>
+              <menuitem label='_t{Request Log}'>
+                  <icon>fas:globe fa-fw</icon>
+                  <action>SystemRequestLogList</action>
+              </menuitem>
+              <menuitem label='_t{PHP Log}'>
+                  <icon>fas:exclamation-triangle fa-fw</icon>
+                  <action>SystemPHPErrorLogView</action>
+              </menuitem>
+              <menuitem label='Session dump'>
+                  <icon>fas:code fa-fw</icon>
+                  <action>SystemSessionDumpView</action>
+              </menuitem>
+        </menu>
+    </menuitem>
+        
+    <menuitem label='Common pages'>
+        <menu>
+            <menuitem label='Common page 1'>
+                <icon></icon>
+                <action>CommonPage</action>
+            </menuitem>
+            <menuitem label='Common page 2'>
+                <icon></icon>
+                <action>CommonPage</action>
+            </menuitem>
+            <menuitem label='Common page 3'>
+                <icon></icon>
+                <action>CommonPage</action>
+            </menuitem>
+        </menu>
+    </menuitem>
+    
+    <menuitem label='Logout'>
+        <action>LoginForm#method=onLogout#static=1</action>
+        <icon>fas:sign-out-alt fa-fw</icon>
+    </menuitem>
+</menu>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<design>
+    <page>
+        <format>a4</format>
+        <orientation>P</orientation>
+    </page>
+    <text id="1">
+        <class>Text</class>
+        <x>22</x>
+        <y>66</y>
+        <font>Arial</font>
+        <size>12</size>
+        <text>Relatório de contratos</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <rectangle id="2">
+        <class>Rectangle</class>
+        <x>2</x>
+        <y>86</y>
+        <width>590</width>
+        <height>16</height>
+        <fillcolor>#000000</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <text id="3">
+        <class>Text</class>
+        <x>14</x>
+        <y>90</y>
+        <font>Arial</font>
+        <size>12</size>
+        <text>Parcela</text>
+        <color>#FFFFFF</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <anchor id="4">
+        <class>Anchor</class>
+        <x>32</x>
+        <y>110</y>
+        <name>items</name>
+    </anchor>
+    <text id="5">
+        <class>Text</class>
+        <x>88</x>
+        <y>90</y>
+        <font>Arial</font>
+        <size>12</size>
+        <text>vencimento</text>
+        <color>#FFFFFF</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="6">
+        <class>Text</class>
+        <x>194</x>
+        <y>90</y>
+        <font>Arial</font>
+        <size>12</size>
+        <text>Cobertura</text>
+        <color>#FFFFFF</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="7">
+        <class>Text</class>
+        <x>160</x>
+        <y>68</y>
+        <font>Arial</font>
+        <size>10</size>
+        <text>{APOLICE}</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+</design>

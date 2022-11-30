@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<design>
+    <page>
+        <format>a4</format>
+        <orientation>P</orientation>
+    </page>
+    <anchor id="1">
+        <class>Anchor</class>
+        <x>32</x>
+        <y>110</y>
+        <name>items</name>
+    </anchor>
+    <text id="2">
+        <class>Text</class>
+        <x>88</x>
+        <y>90</y>
+        <font>Arial</font>
+        <size>12</size>
+        <text>vencimento</text>
+        <color>#FFFFFF</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="3">
+        <class>Text</class>
+        <x>194</x>
+        <y>90</y>
+        <font>Arial</font>
+        <size>12</size>
+        <text>Cobertura</text>
+        <color>#FFFFFF</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="4">
+        <class>Text</class>
+        <x>162</x>
+        <y>26</y>
+        <font>Arial</font>
+        <size>10</size>
+        <text>{APOLICE}</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+</design>
